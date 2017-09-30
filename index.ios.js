@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import PiLightsContainer from './piSwitch/piLights/PiLightsContainer.js'
 
 export default class PiLightsReactNative extends Component {
   render() {
@@ -20,12 +21,10 @@ export default class PiLightsReactNative extends Component {
           Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+        <PiLightsContainer />
       </View>
     );
   }
